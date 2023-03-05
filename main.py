@@ -1,3 +1,6 @@
+from random import randint
+
+
 def bubble_sorting(alist: list) -> list:
     """
     Возвращает список, отсортированый пузырьковой сортировкой
@@ -19,7 +22,7 @@ def bubble_sorting(alist: list) -> list:
 
 
 def execute_application():
-    pass
+    num_list = [randint(1, 20) for _ in range(20)]
 
 
 if __name__ == "__main__":
