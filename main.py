@@ -1,3 +1,9 @@
+
+
+def bubble_sorting(alist: list) -> list:
+    pass
+
+
 def execute_application():
     pass
 
