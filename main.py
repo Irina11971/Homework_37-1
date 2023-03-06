@@ -24,6 +24,8 @@ def bubble_sorting(alist: list) -> list:
 def execute_application():
     num_list = [randint(1, 20) for _ in range(20)]
 
+    num_list = bubble_sorting(num_list)
+
 
 if __name__ == "__main__":
     execute_application()
