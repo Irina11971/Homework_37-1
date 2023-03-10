@@ -42,7 +42,6 @@ def execute_application():
     print(f"Список после сортировки:\n{num_list}")
 
 
-
     my_list = [randint(-8, 99) for _ in range(20)]
     print(f"Список до сортировки:\n{my_list}")
     my_list = sorting_insertion(my_list)
