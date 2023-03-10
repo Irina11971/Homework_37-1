@@ -20,6 +20,20 @@ def bubble_sorting(alist: list) -> list:
             break
     return alist
 
+def sorting_insertion(my_list: list[int]) -> list:
+    """
+    Сортировка списка вставками
+
+    :param my_list (list): Список целочисленных значений
+    """
+    for i in range(1, len(my_list)):
+        temp = my_list[i]
+        j = i - 1
+        while (j >= 0 and temp < my_list[j]):
+            my_list[j + 1] = my_list[j]
+            j = j - 1
+        my_list[j + 1] = temp
+
 
 def execute_application():
     num_list = [randint(1, 20) for _ in range(20)]
